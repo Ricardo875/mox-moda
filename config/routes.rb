@@ -1,9 +1,9 @@
 Rails.application.routes.draw do
-  devise_for :designers, controllers: { registrations: "registrations" }
-  devise_for :retailers, controllers: { registrations: "registrations" }
   #  REMINDER: ALWAYS PUT ROOT ROUTE AT THE BEGINNING OF THE FILE
   root to: 'pages#home'
   mount Attachinary::Engine => "/attachinary"
+  #devise_for :designers, controllers: { registrations: "registrations" }
+  #devise_for :retailers, controllers: { registrations: "registrations" }
 
   # STATIC PAGES
   get '/buyers', to: 'pages#buyers'
@@ -18,15 +18,13 @@ Rails.application.routes.draw do
   get 'about', to: 'pages#about'
 
   resources :collections, only: [:show]
-
   resources :categories, only: [ :show ]
-
   resources :designers, only: [:show, :index] do
     resources :looks, only: [:show]
     resources :products, only: [:show]
   end
-  resources :designers, only: [:edit, :update]
 
+  resources :designers, only: [:edit, :update]
   resource :retailer, only: [:show, :edit, :update, :index]
   resource :store_collection, only: [:show, :new, :create, :edit, :update] do
     resources :store_products, only: [:create, :destroy]
