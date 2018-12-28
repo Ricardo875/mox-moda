@@ -19,4 +19,19 @@ class PagesController < ApplicationController
 
     end
   end
+
+  def buyers
+  end
+
+  def designers
+  end
+
+  def about
+  end
+
+  def faq
+  end
+
+  def live_chat
+  end
 end
