@@ -2,8 +2,8 @@ Rails.application.routes.draw do
   #  REMINDER: ALWAYS PUT ROOT ROUTE AT THE BEGINNING OF THE FILE
   root to: 'pages#home'
   mount Attachinary::Engine => "/attachinary"
-  #devise_for :designers, controllers: { registrations: "registrations" }
-  #devise_for :retailers, controllers: { registrations: "registrations" }
+  devise_for :designers, controllers: { registrations: "registrations" }
+  devise_for :retailers, controllers: { registrations: "registrations" }
 
   # STATIC PAGES
   get '/buyers', to: 'pages#buyers'
