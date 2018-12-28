@@ -21,4 +21,9 @@
    end
   end
 
+  private
+
+   def designer_params
+    params.require(:designer).permit(:first_name,:last_name, :brand, :age, :city, :profile_photo, :detail )
+  end
 end
