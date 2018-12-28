@@ -1,4 +1,4 @@
 class LooksController < ApplicationController
   def show
-    @look = Look.find([:id])
+    @look = Look.find(params[:id])
   end
