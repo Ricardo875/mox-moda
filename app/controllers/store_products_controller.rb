@@ -17,3 +17,23 @@ class StoreProductsController < ApplicationController
       format.js
     end
   end
+
+  def destroy
+    @store_product = StoreProduct.where(product_id: params[:id], store_collection: current_retailer.store_collection).first
+    @product = @store_product.product
+    @store_product.destroy
+
+    respond_to do |format|
+      format.html {
+        if session[:previous_page] == "retailers#show"
+          redirect_to retailer_path
+        else
+          redirect_to designer_path(@store_product.product.designer)
+        end
+        flash[:notice] = "Succesfully removed #{@store_product.product.name}"
+      }
+      format.js
+    end
+  end
+
+end
