@@ -6,15 +6,6 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-puts "Creating initial seed"
-OrderProduct.destroy_all
-Category.destroy_all
-Designer.destroy_all
-StoreCollection.destroy_all
-Retailer.destroy_all
-Product.destroy_all
-Collection.destroy_all
-
 Category.create!(
   [
     {title: "Womenswear"},
@@ -31,3 +22,29 @@ Category.create!(
     {title: "Accessories"}
   ]
 )
+
+# ____LIMI____________________________________________
+
+limi = Designer.create!(
+  brand: "Limi Feu",
+  city: "Tokyo",
+  first_name: 'Limi',
+  last_name: 'feu',
+  email: "email@limi.feu",
+  password: "123456",
+  detail: "",
+  age: 2000,
+  profile_photo_url: "http://www.limifeu.com/images/collection/aw17/coll06.jpg")
+
+# ____Kika____________________________________________
+
+kika = Designer.create!(
+  brand: "Kika Neumann",
+  city: "Santiago",
+  first_name: 'Kika',
+  last_name: 'Neumann',
+  email: "emailing@limi.feu",
+  password: "123456",
+  detail: "",
+  age: 2001,
+  profile_photo_url: "https://1.bp.blogspot.com/-B2UQkI2kDQo/WW1djNd_VYI/AAAAAAABq5Y/h4HxlSWsQkg-tHjS8-JPi8ZhXxqWm2nEQCLcBGAs/s1600/Kika-Neumann-abrigo-invierno2017.jpg")
