@@ -54,13 +54,6 @@
       <h1 class="text-center highlight-header">Featured Designers</h1>
     </div>
   </div>
-  <div class="row">
-    <% @designers.sample(6).each do |d| %>
-    <div class="col-xs-12 col-md-4">
-      <%= render 'shared/designercard', designer: d %>
-    </div>
-    <% end %>
-  </div>
 </div>
 
 <div class="container all-btn">
