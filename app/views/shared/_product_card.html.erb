@@ -1,0 +1,5 @@
+<%= link_to designer_product_path(product.designer, product) do %>
+  <div class="product-card product-card-high" data-product='<%= product.id %>'>
+    <div class="product-image product-image-tall" style="background-image:url('<%= image_url product.picture_1, crop: :fill %>');">
+
+      <%= render 'shared/star', product: product %>
