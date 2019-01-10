@@ -6,3 +6,9 @@
     </label>
     <input type="submit" name="commit" id="destroy-<%= product.id %>" value="Remove" class="hidden" data-disable-with="Remove">
   <% end %>
+<% else %>
+  <%= simple_form_for :product, url: store_collection_store_products_path(product_id: product.id), remote: true do |f| %>
+    <label for="submit-<%= product.id %>">
+      <i class="fa fa-star" aria-hidden="true"></i>
+
+    </label>
