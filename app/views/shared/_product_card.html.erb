@@ -3,3 +3,23 @@
     <div class="product-image product-image-tall" style="background-image:url('<%= image_url product.picture_1, crop: :fill %>');">
 
       <%= render 'shared/star', product: product %>
+</div>
+    <div class="product-details">
+      <p>
+        <strong>
+          <%=product.name%>
+        </strong>
+        <%= truncate product.detail, length: 50%>
+      </p>
+      <div class="product-footer">
+        <div class="price">
+          $<%= product.price %>
+        </div>
+        <div class="rrp">
+          RRP: $<%= product.price*2 %>
+        </div>
+      </div>
+    </div>
+  <div id="product-notice-<%= product.id %>"></div>
+  </div>
+<% end %>
