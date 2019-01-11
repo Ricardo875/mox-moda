@@ -38,3 +38,16 @@
     <li>Androgynous</li>
   </ul>
 </div>
+
+<div class="row">
+    <div class="col-xs-12">
+      <h1 class="text-center with-underline">All Designers</h1>
+    </div>
+
+    <div class="row">
+    <% @designers.each do |d| %>
+    <div class="col-xs-12 col-md-6">
+      <%= render 'shared/designercard', designer: d %>
+    </div>
+    <% end %>
+  </div>
