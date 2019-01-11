@@ -1,47 +1,47 @@
  <div class="first-section">
-
   <h2>
     <%=@designer.brand %>
   </h2>
-<ul class="list-unstyled bio-box">
+  <ul class="list-unstyled bio-box">
     <li class="brand">
-     Contact person: <%= @designer.first_name%> <%= @designer.last_name %>
-   </li>
-   <li>
+      Contact person: <%= @designer.first_name%> <%= @designer.last_name %>
+    </li>
+    <li>
      <span class="city"><%= @designer.city %></span> - <span class="year"><%= @designer.age %></span>
-   </li>
-  <li class="description">
-    <p class="long-text">
-      <%= truncate @designer.detail, length: 150 %>
-    </p>
-  </li>
-</ul>
+    </li>
+    <li class="description">
+      <p class="long-text">
+        <%= truncate @designer.detail, length: 150 %>
+      </p>
+    </li>
+  </ul>
 
-<div class="bio-image-sidebar" style="background-image:url('<%= cl_image_path @designer.profile_photo.path %>');">
+  <div class="bio-image-sidebar" style="background-image:url('<%= cl_image_path @designer.profile_photo.path %>');">
   </div>
 </div>
 
 <em>
-<p> <strong>Tags:</strong> <% @designer.categories.each do |category|  %>
+  <p> <strong>Tags:</strong> <% @designer.categories.each do |category|  %>
   <%= link_to category.title, category_path(category)%>
+
   <% end %>
 </p>
 <p> <strong>Main markets: Europe, Middle East</strong>
   </p>
 </em>
 
-div class="second-section">
+<div class="second-section">
   <h4>
     collections
   </h4>
+
   <ul>
-     <% @designer.collections.each do |collection| %>
+    <% @designer.collections.each do |collection| %>
       <li>
         <%= link_to "#{collection.season} #{collection.year}", collection_path(collection), remote: true  %>
       </li>
     <% end %>
   </ul>
-
 
   <h4>
     preferences
@@ -89,5 +89,4 @@ div class="second-section">
   <% else %>
     <input  id="connect-btn" type="submit" value="Connect" class="btn-space-station">
   <% end %>
-
 </div>
