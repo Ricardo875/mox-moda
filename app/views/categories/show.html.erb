@@ -41,3 +41,17 @@
   </ul>
 </div>
 
+<div>
+  <div class="row">
+    <div class="col-xs-12">
+      <h1 class="text-center with-underline"><%= @category.title %></h1>
+    </div>
+  </div>
+  <!-- For all designers -> make a designer card -->
+  <div class="row">
+    <% @category.designers.each do |d| %>
+    <div class="col-xs-12 col-md-6">
+      <%= render 'shared/designercard', designer: d %>
+    </div>
+    <% end %>
+
