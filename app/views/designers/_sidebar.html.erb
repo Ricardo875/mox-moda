@@ -29,3 +29,31 @@
 <p> <strong>Main markets: Europe, Middle East</strong>
   </p>
 </em>
+
+div class="second-section">
+  <h4>
+    collections
+  </h4>
+  <ul>
+     <% @designer.collections.each do |collection| %>
+      <li>
+        <%= link_to "#{collection.season} #{collection.year}", collection_path(collection), remote: true  %>
+      </li>
+    <% end %>
+  </ul>
+
+
+  <h4>
+    preferences
+  </h4>
+  <ul>
+    <li>
+      <strong>Price:  </strong>$$
+    </li>
+    <li>
+      <strong>Method:  </strong>F.O.B
+    </li>
+      <li>
+      <strong>MOQ:  </strong>$3,000
+    </li>
+  </ul>
