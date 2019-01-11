@@ -20,3 +20,12 @@
 <div class="bio-image-sidebar" style="background-image:url('<%= cl_image_path @designer.profile_photo.path %>');">
   </div>
 </div>
+
+<em>
+<p> <strong>Tags:</strong> <% @designer.categories.each do |category|  %>
+  <%= link_to category.title, category_path(category)%>
+  <% end %>
+</p>
+<p> <strong>Main markets: Europe, Middle East</strong>
+  </p>
+</em>
