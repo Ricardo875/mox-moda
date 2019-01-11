@@ -57,3 +57,37 @@ div class="second-section">
       <strong>MOQ:  </strong>$3,000
     </li>
   </ul>
+
+<h4>
+    products
+  </h4>
+  <ul>
+    <li>
+     Jackets
+    </li>
+    <li>
+      Suits
+    </li>
+    <li>
+      Sweaters
+    </li>
+    <li>knitwear</li>
+    <li>shirts</li>
+    <li>t-shirts</li>
+    <li>trousers</li>
+    <li>sneakers</li>
+    <li>shoes</li>
+    <li>bags</li>
+    <li>hats</li>
+    <li>accessories</li>
+  </ul>
+
+  <% if current_designer == @designer %>
+  <%= link_to edit_designer_path(current_designer) do %>
+    <input  id="connect-btn" type="submit" value= "Update" class="btn-space-station">
+  <% end %>
+  <% else %>
+    <input  id="connect-btn" type="submit" value="Connect" class="btn-space-station">
+  <% end %>
+
+</div>
