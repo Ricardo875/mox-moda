@@ -3,3 +3,16 @@
   <h2>
     <%=@designer.brand %>
   </h2>
+<ul class="list-unstyled bio-box">
+    <li class="brand">
+     Contact person: <%= @designer.first_name%> <%= @designer.last_name %>
+   </li>
+   <li>
+     <span class="city"><%= @designer.city %></span> - <span class="year"><%= @designer.age %></span>
+   </li>
+  <li class="description">
+    <p class="long-text">
+      <%= truncate @designer.detail, length: 150 %>
+    </p>
+  </li>
+</ul>
