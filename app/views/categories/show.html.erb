@@ -41,7 +41,7 @@
   </ul>
 </div>
 
-<div>
+<div class="designer-container">
   <div class="row">
     <div class="col-xs-12">
       <h1 class="text-center with-underline"><%= @category.title %></h1>
@@ -54,4 +54,13 @@
       <%= render 'shared/designercard', designer: d %>
     </div>
     <% end %>
+</div>
+</div>
 
+</div>
+    </div>
+  </div>
+</div>
+
+
+<!-- Designer.where {designer.categories.includes? { category.title == 'Menswear' }} -->
