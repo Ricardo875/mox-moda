@@ -5,3 +5,9 @@
     Production: 3 weeks
     Shipping: 2 weeks
 </h5>
+<div class="products-grid">
+    <% collection.products.each_slice(3) do |slice| %>
+    <div class="row">
+      <% slice.each do |product| %>
+        <div class="col-xs-12 col-lg-4">
+          <%= render partial: "shared/product_card", locals: { product: product, collection: collection } %>
