@@ -2,4 +2,14 @@
     <h2 class="text-center">
      <%= @designer.brand %>
    </h2>
+   <p class="long-text">
+    <%= prettify_text(@designer.detail).lstrip.html_safe %>
+  </p>
+</div>
+<div class="cards-container">
+
+  <div id="collection_preview">
+    <%= render 'collections/preview', collection: @designer.collections.last %>
+  </div>
+
 </div>
