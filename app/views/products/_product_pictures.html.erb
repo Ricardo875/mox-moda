@@ -6,3 +6,13 @@
   </div>
 </div>
 <% end %>
+
+  <% unless @product.picture_2.blank? %>
+  <div class="col-xs-12 col-lg-4">
+
+    <div class="product-card">
+      <div class="product-image product-image-small" data-target="<%= image_path @product.picture_2 %>" style="background-image:url();"></div>
+    </div>
+
+  </div>
+  <% end %>
