@@ -2,3 +2,11 @@
  <div class="breadcrumbs">
   <%= link_to "Designers", designers_path %>
 </div>
+<div class="designer-wishlist-table">
+  <h2 class="text-center plan-header">
+    Plan for <%= @retailer.store_collection.try(:season) %> <%= @retailer.store_collection.try(:year) %>
+  </h2>
+  <div class="designer-wishlist-table">
+    <% @store_products_grouped_by_designer.each do |designer, store_products| %>
+    <div class="row">
+      <h3><%= designer.city %> // <%= link_to designer.brand, designer_path(designer) %></h3>
