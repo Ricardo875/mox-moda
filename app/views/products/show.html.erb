@@ -2,18 +2,21 @@
   <div class="breadcrumbs">
         <%= link_to "Designers", designers_path %> > <%= link_to @product.designer.brand, designer_path(@product.designer)  %>
       </div>
-<div class="row">
-    <div class="col-xs-6">
-      <div id="highlight" class="product-highlight-picture" style="background-image:url('<%= image_path @product.picture_1 %>');">
-      </div>
-    </div>
-    <div class="col-xs-6">
-      <div class="product-header">
-        <%= render partial: 'product_information', locals: { product: @product} %>
-      </div>
-<div class="row">
-        <%= render partial: "product_pictures", locals: { product: @product } %>
-      </div>
+
+      <div class="row">
+        <div class="col-xs-6">
+          <div id="highlight" class="product-highlight-picture" style="background-image:url('<%= image_path @product.picture_1 %>');">
+          </div>
+        </div>
+
+        <div class="col-xs-6">
+          <div class="product-header">
+            <%= render partial: 'product_information', locals: { product: @product} %>
+          </div>
+
+          <div class="row">
+            <%= render partial: "product_pictures", locals: { product: @product } %>
+          </div>
     </div>
   </div>
 </div>
