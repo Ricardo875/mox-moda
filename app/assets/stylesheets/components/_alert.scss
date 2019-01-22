@@ -1,0 +1,18 @@
+.alert {
+  margin: 0;
+  text-align: center;
+  color: black;
+  border: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 9999;
+  border: 1px solid gray;
+}
+.alert-info {
+  background: $floral-white;
+}
+.alert-warning {
+  background: $red;
+}
