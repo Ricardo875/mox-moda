@@ -142,3 +142,139 @@ Product.create!(
   designer: lana,
   price: 79
   )
+
+# ____BSUITBARCA____________________________________________
+
+thebodysuitofbarcelona = Designer.create!(
+  brand: "The Bodysuit of Barcelona",
+  first_name: "Berta",
+  last_name: "Jarmón",
+  email: "body@barcelona.com",
+  password: '123456',
+  profile_picture: "http://68.media.tumblr.com/af19fa7491391e5b6b730bfe05e00868/tumblr_ovraggvQUg1sl7ipso1_500.jpg",
+  city: "Barcelona",
+  age:2016,
+  detail: "Created in 2016, the Bodysuit of Barcelona is a bodysuit and lifestyle brand based out of Barcelona.
+  To highlight the women bodies with a simple yet powerful design, the Bodysuit of Barcelona creates timeless pieces with a feminine and Mediterranean aesthetic.",
+  categories: [Category.find_by(title: "Womenswear")]
+  )
+
+thebodysuitofbarcelona.profile_photo_url = "http://68.media.tumblr.com/af19fa7491391e5b6b730bfe05e00868/tumblr_ovraggvQUg1sl7ipso1_500.jpg"
+
+bodybarca = Collection.create!(
+  season: "Second",
+  year: 2018,
+  detail: "Desert collection",
+  designer: thebodysuitofbarcelona
+)
+
+bodybarca2 = Collection.create!(
+  season: "First",
+  year: 2018,
+  detail: "Meadow collection",
+  designer: thebodysuitofbarcelona
+)
+
+Product.create!(
+  name: "THE SOPHIE BODYSUIT ARCTIC ICE ",
+  detail: "Round neck and long sleeves bodysuit.
+  Ribbed bodysuit made from premium soft Italian fabric.
+  This color is exclusively customized in Italy for us.
+  Snap closures.
+  67% Italian Viscose 33% Elastane
+  Made in Barcelona",
+  color: "Peach Bloom",
+  sizes: "small,medium,large",
+  picture_1: "https://images.bigcartel.com/product_images/202724246/00410019.jpg?auto=format&fit=max&w=1500",
+  picture_2: "https://images.bigcartel.com/product_images/202620818/BASICO+ARTIC2.jpg?auto=format&fit=max&w=1500",
+  picture_3: "https://images.bigcartel.com/product_images/202749845/00410023.jpg?auto=format&fit=max&w=1500",
+  collection: bodybarca2,
+  designer: thebodysuitofbarcelona,
+  price: 43
+  )
+
+Product.create!(
+  name: "THE SOPHIE BODYSUIT PEACH BLOOM",
+  detail: "Round neck and long sleeves bodysuit.
+  Ribbed bodysuit made from premium soft Italian fabric.
+  This color is exclusively customized in Italy for us.
+  Snap closures.
+  67% Italian Viscose 33% Elastane
+  Made in Barcelona",
+  color: "Peach Bloom",
+  sizes: "small,medium,large",
+  picture_1: "https://images.bigcartel.com/product_images/202722020/342.jpg?auto=format&fit=max&w=1500",
+  picture_2: "https://images.bigcartel.com/product_images/202722050/00410023_nude.jpg?auto=format&fit=max&w=1500",
+  collection: bodybarca2,
+  designer: thebodysuitofbarcelona,
+  price: 40
+  )
+
+Product.create!(
+  name: "THE SOPHIE BODYSUIT WHITE",
+  detail: "Round neck and long sleeves bodysuit.
+  Ribbed bodysuit made from premium soft Italian fabric.
+  This color is exclusively customized in Italy for us.
+  Snap closures.
+  67% Italian Viscose 33% Elastane
+  Made in Barcelona",
+  color: "White",
+  sizes: "small,medium,large",
+  picture_1: "https://images.bigcartel.com/product_images/202723817/00410021_blanco.jpg?auto=format&fit=max&w=1500",
+  picture_2: "https://images.bigcartel.com/product_images/202723826/00370032.jpg?auto=format&fit=max&w=1500",
+  collection: bodybarca2,
+  designer: thebodysuitofbarcelona,
+  price: 40
+  )
+Product.create!(
+  name: "THE TENNIS BODYSUIT WHITE",
+  detail: "Collared and three-quarter length sleeves bodysuit.
+  Center front buttons.
+  Ribbed bodysuit made from premium soft Italian fabric.
+  Snap closures.
+  67% Italian Viscose 33% Elastane
+  Made in Barcelona",
+  color: "White",
+  sizes: "small,medium,large",
+  picture_1: "https://images.bigcartel.com/product_images/202721372/00380007.jpg?auto=format&fit=max&w=1500",
+  picture_2: "https://images.bigcartel.com/product_images/202621958/POLO+BLANCO+2.jpg?auto=format&fit=max&w=1500",
+  picture_3: "https://images.bigcartel.com/product_images/202719821/00380015.jpg?auto=format&fit=max&w=1500",
+  collection: bodybarca,
+  designer: thebodysuitofbarcelona,
+  price: 45
+  )
+
+Product.create!(
+  name: "THE SOPHIE BODYSUIT BLACK",
+  detail: "Round neck and long sleeves bodysuit.
+  Ribbed bodysuit made from premium soft Italian fabric.
+  Snap closures.
+  67% Italian Viscose 33% Elastane
+  Made in Barcelona",
+  color: "Black",
+  sizes: "small,medium,large",
+  picture_1: "https://images.bigcartel.com/product_images/202721753/00370011.jpg?auto=format&fit=max&w=1500",
+  picture_2: "https://images.bigcartel.com/product_images/202724813/00370009.jpg?auto=format&fit=max&w=1500",
+  designer: thebodysuitofbarcelona,
+  price: 39,
+  collection: bodybarca2
+  )
+
+Product.create!(
+  name: "THE COPPI BODYSUIT WHITE",
+  detail: "Turtleneck and long sleeves bodysuit.
+Ribbed bodysuit made from premium soft Italian fabric.
+Snap closures.
+
+67% Italian Viscose 33% Elastane
+
+Made in Barcelona",
+  color: "White",
+  sizes: "small,medium,large",
+  picture_1: "https://images.bigcartel.com/product_images/202723169/RWR.jpg?auto=format&fit=max&w=1500",
+  picture_2: "https://images.bigcartel.com/product_images/202721177/00400027.jpg?auto=format&fit=max&w=1500",
+  picture_3:"https://images.bigcartel.com/product_images/202628378/CISNE+BLANCO+4.jpg?auto=format&fit=max&w=1500",
+  designer: thebodysuitofbarcelona,
+  price: 39,
+  collection: bodybarca
+  )
