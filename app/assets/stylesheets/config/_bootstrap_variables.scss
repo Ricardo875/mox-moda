@@ -1,0 +1,52 @@
+// This is where you override default Bootstrap variables
+// 1. All Bootstrap variables are here => https://github.com/twbs/bootstrap-sass/blob/master/assets/stylesheets/bootstrap/_variables.scss
+// 2. These variables are defined with default value (see https://robots.thoughtbot.com/sass-default)
+// 3. You can override them below!
+
+// General style
+$font-family-sans-serif:  $body-font;
+$headings-font-family:    $headers-font;
+$body-bg:                 $baby-powder;
+$font-size-base: 14px;
+
+// Colors
+$gray-base:       $gray;
+$brand-primary:   $moxmoda-orange;
+$brand-success:   $moxmoda-orange;
+$brand-info:      $yellow;
+$brand-danger:    $red;
+$brand-warning:   $orange;
+
+// Buttons & inputs' radius
+$border-radius-base:  2px;
+$border-radius-large: 2px;
+$border-radius-small: 2px;
+
+// Override other variables below!
+
+.regular-text {
+  color: $moxmoda-orange;
+  font-weight: bolder;
+  border: none;
+  background-color: transparent;
+  font-size: 14px;
+  &:hover {
+  text-decoration: underline;
+  }
+}
+
+body {
+  padding-top: 25px;
+  -webkit-font-smoothing: antialiased;
+}
+
+
+.row-relative {
+  position: relative;
+  .image-absolute-center {
+    position: absolute;
+    bottom: -10px;
+    right: 50%;
+    width: 50px;
+  }
+}
