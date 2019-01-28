@@ -286,3 +286,171 @@ Made in Barcelona",
   price: 39,
   collection: bodybarca
   )
+
+# ____BASHAQUES__________________________________
+
+manish = Designer.create!(
+  categories: [Category.find_by(title: "Womenswear"), Category.find_by(title: "Accessories")],
+  brand: "Manish Arora",
+  first_name: "Manish",
+  last_name: "Arora",
+  email: " hello@bashaques.com",
+  password: "123456",
+  profile_picture:"https://martjackstorage.blob.core.windows.net/in-resources/bdc03b70-0e3c-44d5-a4d5-68c7fad6cbd6/Images/userimages/Portrait-Manish-Arora.jpg",
+  city: "New Delhi",
+  age: 2014,
+  detail: "Manish Arora is one of the most celebrated and inspiring contemporary designers in the fashion world today. He is known for his astute craftsmanship and unique play on colors, such as his trademark palette of pink and gold.
+It was in 1997, that the world 1st viewed Manish's design aesthetic with the launch of his label 'Manish Arora'. With this he grew from strength to strength gaining a devoted following in the fashion world, which finally led to Manish exhibiting at the London Fashion Week in 2005. In 2007, Manish showcased for the 1st time in Paris Fashion Week. He became a member of the distinguished French Federation of Pret-a-Porter in 2009
+Today, Manish sells his creations worldwide across prestigious stores such as Printemps, Joyce and Saks 5th Avenue. In 2011, Manish was appointed the Creative Director for Iconic French Fashion House 'Paco Robanne' where he designed two successful collections. "
+  )
+manish.profile_photo_url = "https://martjackstorage.blob.core.windows.net/in-resources/bdc03b70-0e3c-44d5-a4d5-68c7fad6cbd6/Images/userimages/Portrait-Manish-Arora.jpg"
+
+manish_col = Collection.create!(
+  season: 'Summer',
+  year:2018,
+  detail: " BALLERINA'S HIDDEN DREAM",
+  designer: manish
+)
+
+Product.create!(
+  name: "BLUE TOKYO TOP",
+  detail: " THICK 100% cotton",
+  color: "white & blue",
+  sizes:"small,medium,large",
+  picture_1: "https://martjackstorage.blob.core.windows.net/in-resources/bdc03b70-0e3c-44d5-a4d5-68c7fad6cbd6/Images/userimages/SpringSummer2017/SpringSummer2017image37.jpg",
+  collection: manish_col,
+  designer: manish,
+  price:  259
+)
+Product.create!(
+  name: "BLUE TOKYO TOP",
+  detail: " THICK 100% cotton",
+  color: "white & blue",
+  sizes:"small,medium,large",
+  picture_1: "https://martjackstorage.blob.core.windows.net/in-resources/bdc03b70-0e3c-44d5-a4d5-68c7fad6cbd6/Images/userimages/SpringSummer2017/SpringSummer2017image14.jpg",
+  collection: manish_col,
+  designer: manish,
+  price:  259
+)
+Product.create!(
+  name: "BLUE TOKYO TOP",
+  detail: " THICK 100% cotton",
+  color: "white & blue",
+  sizes:"small,medium,large",
+  picture_1: "https://martjackstorage.blob.core.windows.net/in-resources/bdc03b70-0e3c-44d5-a4d5-68c7fad6cbd6/Images/userimages/SpringSummer2017/SpringSummer2017image33.jpg",
+  collection: manish_col,
+  designer: manish,
+  price:  259
+)
+
+
+# ____RAD HOURANI_______________________________________
+
+rad = Designer.create!(
+  categories: [Category.find_by(title: "Womenswear"),Category.find_by(title: "Menswear"), Category.find_by(title: "Outerwear"), Category.find_by(title: "Accessories")],
+  brand: "RAD HOURANI",
+  first_name: "Rad",
+  last_name: "Hourani",
+  email: "hello@radhourani.com",
+  password: "123456",
+  profile_picture: "https://cdn.shopify.com/s/files/1/0035/7742/files/Flanelle_Magazine_RAD_HOURANI_02_WEB678.jpg?v=1509053442",
+  city: "Montreal",
+  age: 2014,
+  detail:" 'STARTED CREATING WITH A SENSE OF CURIOSITY AND INNOCENCE DRIVEN BY MY 'NO-BACKGROUND'
+   BACKGROUND. NO SCHOOL. NO TEACHERS. NO TELLY. NO BOUNDARIES. NO FORMATTING. I LIKE THE IDEA OF
+   A WORLD THAT WE COULD LIVE AND SHAPE BY OURSELVES, ONLY BY OBSERVING. EACH OUR OWN. MY VISUALS
+   HAVE ERUPTED FROM THIS WORLD OF MINE. THEY ARE GENDERLESS, AGELESS AND LIMITLESS. THEY COME FROM NO
+   NATION, NO RACE, NO RELIGION, YET THEY COULD BE HOME ANYWHERE, ANYTIME. THEY EXUDE THE ESSENCE OF
+   TIMELESS STYLE FOR ANTI-CONFORMIST INDIVIDUALS.' - Rad Hourani "
+   )
+
+rad.profile_photo_url = "https://cdn.shopify.com/s/files/1/0035/7742/files/Flanelle_Magazine_RAD_HOURANI_02_WEB678.jpg?v=1509053442"
+
+rad_col = Collection.create!(
+  season: 'All year collection 3',
+  year:2018,
+  detail: " geless raceless nationaless genderless limitless",
+  designer: rad
+)
+
+
+Product.create!(
+  name: "MAYANGA TOP",
+  detail: "LIBAYA long cut out check top with bow detail - 100% cotton",
+  color: "white & blue",
+  sizes:"small,medium,large",
+  picture_1: "https://cdn.kobisi.com/cdn/image/39/114759/3/470/470/white-jacket.jpg",
+  collection: rad_col,
+  designer: rad,
+  price: 215
+)
+
+
+
+
+# ____BASHAQUES_________________________________________
+
+bashaques = Designer.create!(
+  categories: [Category.find_by(title: "Womenswear")],
+  brand: "Bashaques",
+  first_name: "Başak",
+  last_name: "Cankeş",
+  email: " hello@bashaquess.com",
+  password: "123456",
+  profile_picture:"https://cdn.kobisi.com/cdn/slider/167/2_1472025555/banner-32.jpg?v=1510646212",
+  city: "Alaçatı",
+  age: 2014,
+  detail: "Başak Cankeş, the founder and lead designer of Bashaques’ followed her passion and studied
+  fashion design at Fine Arts Department to create his own dream and build an inspiring future.
+  By benefiting from her experiences with widely known fashion designers like Bora Aksu in United Kingdom,
+  she discovered her talent in painting and pattern design. This inner discovery set a milestone in her
+  career and motivated her to create a brand offering wearable art and inspire women with an artistic point of view. Başak Cankeş finds her inspiration in art,
+   different cultures and travelling. She runs her first store in Alaçatı, where is so popular among intellectual scene and surfers in Turkey, and hosts various international designers brands, art shows and the collection with Bashaques’ label.
+   Basak Cankes’ AW15/16 collection is awarded by Mediterranean
+  Fashion Prize Committee in Marseille and Centre of Fashion Enterprise in United Kingdom in 2015."
+  )
+
+bashaques.profile_photo_url = "https://cdn.kobisi.com/cdn/slider/167/2_1472025555/banner-32.jpg?v=1510646212"
+
+
+ summer = Collection.create!(
+  season: 'Summer',
+  year:2018,
+  detail: "BALLERINA'S HIDDEN DREAM",
+  designer: bashaques
+)
+
+
+
+Product.create!(
+  name: "MAYANGA TOP",
+  detail: "LIBAYA long cut out check top with bow detail - 100% cotton",
+  color: "white & blue",
+  sizes:"small,medium,large",
+  picture_1: "https://cdn.kobisi.com/cdn/image/39/115091/3/470/470/hand-knitted-maxi-dress.jpg",
+  collection: summer,
+  designer: bashaques,
+  price: 415
+)
+
+Product.create!(
+  name: "MAYANGA TOP",
+  detail: "LIBAYA long cut out check top with bow detail - 100% cotton",
+  color: "white & blue",
+  sizes:"small,medium,large",
+  picture_1: "https://cdn.kobisi.com/cdn/image/39/114759/3/470/470/white-jacket.jpg",
+  collection: summer,
+  designer: bashaques,
+  price: 215
+)
+
+Product.create!(
+  name: "MAYANGA TOP",
+  detail: "LIBAYA long cut out check top with bow detail - 100% cotton",
+  color: "white & blue",
+  sizes:"small,medium,large",
+  picture_1: "https://cdn.kobisi.com/cdn/image/39/19214/30/470/470/dali-s-dream-jacket.jpg",
+  collection: summer,
+  designer: bashaques,
+  price: 415
+)
