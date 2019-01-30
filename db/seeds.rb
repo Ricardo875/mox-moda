@@ -784,3 +784,338 @@ Product.create!(
   designer: rocket,
   price: 139
 )
+
+# ____LIBAYA____________________________________________
+
+
+libaya = Designer.create!(
+  categories: [Category.find_by(title: "Womenswear")],
+  brand: "Libaya",
+  first_name: "Congo",
+  last_name: "Lauren",
+  email: "contact@shop-libaya.com",
+  password: '123456',
+  profile_picture: "https://static1.squarespace.com/static/57a492f14402439bb06d2c72/t/5958bd0146c3c49a050a26d2/1498987795266/Libaya+Campaign+OK15.jpeg?format=500w",
+  city: "Nairobi",
+  age: 2009,
+  detail: "With a lot of passion, LIBAYA aims to present a variety of good quality
+  African made ready-to-wear tops for the global style conscious woman.
+  Deriving from the Bantu language, Lingala, which is mainly spoken in DR CONGO, LIBAYA means a
+  “traditionally tailored women’s top”.LIBAYA feels empowered to contribute to a fair and
+  developing fashion eco-system in West and Central Africa. Made with love for our Motherland,
+  our brand thinks global, as we highly believe in celebrating the diversity of female beaut
+  y that goes beyond borders.
+  While combining inspiration from the past and present, the brand creates versatile,
+  feminine and confident fashion that reflects the now and every woman will be proud wearing.
+  A LIBAYA top is that one staple item in a woman's wardrobe, easing her daily style decisions."
+)
+
+libaya.profile_photo_url = "https://static1.squarespace.com/static/57a492f14402439bb06d2c72/t/5958bd0146c3c49a050a26d2/1498987795266/Libaya+Campaign+OK15.jpeg?format=500w"
+
+
+lib_summer_18 = Collection.create!(
+  season: 'Summer',
+  year:2018,
+  detail: "LIBANDELI COLLECTION: INSPIRED BY A SPONTANEOUS,
+  POWERFUL YET ROMANTIC AESTHETIC IN CAPE COAST OUR FIRST VISUAL STORY WAS BROUGHT TO LIFE.
+Libandeli means 'beginning' in Lingala, referring to
+the new beginning of a style story born in Africa.",
+  designer:libaya
+)
+
+Product.create!(
+  name: "MAYANGA TOP",
+  detail: "LIBAYA long cut out check top with bow detail - 100% cotton",
+  color: "white & blue",
+  sizes:"small,medium,large",
+  picture_1: "https://static1.squarespace.com/static/57a492f14402439bb06d2c72/583b2961579fb36e9c992ae0/595778de86e6c022599611d7/1498904813791/DSC_6788.jpg?format=2500w",
+  collection: lib_summer_18,
+  designer: libaya,
+  price: 30
+)
+
+Product.create!(
+  name: "KALUNGA TOP",
+  detail: "LIBAYA long cut out wrap top with collar - 100% cotton",
+  color: "Light Green",
+  sizes: "small,medium,large",
+  picture_1: "https://static1.squarespace.com/static/57a492f14402439bb06d2c72/583b2961579fb36e9c992ae0/59578d90f7e0ab235521fe74/1498910103441/DSC_6793.jpg?format=2500w",
+  collection: lib_summer_18,
+  designer: libaya,
+  price: 30
+)
+
+Product.create!(
+  name: "BAYONGA TOP",
+  detail: "LIBAYA exaggerated collar off-shoulder top with wide sleeves",
+  color: "Light Blue & white",
+  sizes: "small,medium,large",
+  picture_1: "https://static1.squarespace.com/static/57a492f14402439bb06d2c72/583b2961579fb36e9c992ae0/59578e88099c01c37e6434b1/1498910357251/DSC_6804.jpg?format=2500w",
+  collection: lib_summer_18,
+  designer: libaya,
+  price: 30
+)
+
+Product.create!(
+  name: "ESENGO TOP",
+  detail: "LIBAYA Top one shoulder with ruffle - 100% cotton",
+  color: "Blue",
+  sizes: "small,medium,large",
+  picture_1: "https://static1.squarespace.com/static/57a492f14402439bb06d2c72/583b2961579fb36e9c992ae0/59578f2ce4fcb5e974b399a3/1498910515209/DSC_6760.jpg?format=2500w",
+  collection: lib_summer_18,
+  designer: libaya,
+  price: 30
+)
+Product.create!(
+  name: "ESENGO TOP",
+  detail: "LIBAYA Top one shoulder with ruffle
+ - 100% cotton",
+  color: "White",
+  sizes: "small,medium,large",
+  picture_1: "https://static1.squarespace.com/static/57a492f14402439bb06d2c72/583b2961579fb36e9c992ae0/59578f83db29d6f52c78da43/1498910601886/DSC_6721.jpg?format=2500w",
+  collection: lib_summer_18,
+  designer: libaya,
+  price: 30
+)
+
+
+Product.create!(
+  name: "MPIA TOP",
+  detail: "LIBAYA puff sleeve off-shoulder top - 100% cotton",
+  color: "White",
+  sizes: "small,medium,large",
+  picture_1: "https://static1.squarespace.com/static/57a492f14402439bb06d2c72/583b2961579fb36e9c992ae0/5957931b414fb5261db274db/1498911523043/Libaya+Lookbook3.jpg?format=2500w",
+  collection: lib_summer_18,
+  designer: libaya,
+  price: 29
+)
+
+
+
+Product.create!(
+  name: "INDEKE TOP",
+  detail: "LIBAYA bandeau black ruffle crop top - 100% cotton",
+  color: "Black",
+  sizes: "small,medium,large",
+  picture_1: "https://static1.squarespace.com/static/57a492f14402439bb06d2c72/583b2961579fb36e9c992ae0/5957a6dbe58c62f43b46fe99/1498916606018/DSC_6822b.jpg?format=2500w",
+  collection: lib_summer_18,
+  designer: libaya,
+  price: 20
+)
+
+
+Product.create!(
+  name: "FUTURE T-SHIRT",
+  detail:"LIBAYA The Future Is Female And African statement t-shirt.",
+  color: "Black ",
+  sizes: "small,medium,large",
+  picture_1: "https://static1.squarespace.com/static/57a492f14402439bb06d2c72/583b2961579fb36e9c992ae0/595793716b8f5b8c45f65ee7/1498911608167/Libaya+Lookbook42.jpg?format=2500w",
+  collection: lib_summer_18,
+  designer: libaya,
+  price: 30
+)
+
+Product.create!(
+  name: "FUTURE T-SHIRT",
+  detail:"LIBAYA The Future Is Female And African statement t-shirt.",
+  color: "White",
+  sizes: "small,medium,large",
+  picture_1: "https://static1.squarespace.com/static/57a492f14402439bb06d2c72/583b2961579fb36e9c992ae0/595793b203596e47ed0b2eb1/1498911672579/Libaya+Lookbook43.jpg?format=2500w",
+  collection: lib_summer_18,
+  designer: libaya,
+  price: 30
+)
+
+# ____VIKA____________________________________________
+
+vika = Designer.create!(
+  categories: [Category.find_by(title:"Womenswear"), Category.find_by(title:"Accessories")],
+  brand: "Vika Gazinskaya",
+  first_name: "Vika",
+  last_name: "Gazinskaya",
+  email:"vika@vika.com",
+  password: "123456",
+  profile_photo_url: "https://www.polyvore.com/cgi/img-thing?.out=jpg&size=l&tid=220687197",
+  city: "Moscow",
+  age: 2007,
+  detail: " Vika Gazinskaya collections are internationally renowned and rooted in the highly personal aesthetics of its creator.
+Vika was born and raised in Moscow, Russia.
+During her time studying fashion design, she won a contest awarding her an internship at L'Officiel Russia, where she developed a deep knowledge of the fashion industry.
+After interning for a year, she was hired as a fashion editor and continued to work while finishing her studies.
+Vika then briefly worked as a freelancer, before debuting her eponymous ready-to-wear collection in 2007.
+In March 2010, Vika Gazinskaya presented her collection in Paris for the first time, attracting a more international audience.
+In July 2010, Vika was invited to create a window display for Parisian boutique Colette during Haute Couture fashion week. In 2012, Vika was one of six finalists for the coveted ANDAM award.
+In 2014 Vika was one of the finalist of generous LVMH Prize...")
+
+
+# ____ARM____________________________________________
+
+arm = Designer.create!(
+  categories: [Category.find_by(title: "Accessories")],
+  brand:"Armature",
+  first_name: "James",
+  last_name: "Johnson",
+  email: "hello@armature.com",
+  password: "123456",
+  profile_photo_url: "https://cdn.shopify.com/s/files/1/1062/9358/products/Barbed-Wire-Ear-Cuff-Lookbook_1024x1024.jpg?v=1506200670",
+  age:2015,
+  city: "Los Angeles",
+  detail: "Armature creates provocative pieces for women and men. ARMATURE officially launched in 2015 in Los Angeles, California by Founder, Designer and Creative Director, Sara Angelucci.
+Sara draws inspiration from the obscure producing unique fashion stories and designs that provoke emotion and thought, while bridging the gap between fashion and art.
+Armature designs are sought after by hollywood celebrities, socialites, fashion influencers and style trendsetters. Worn by the personalities of Ruby Rose, Sofia Richie, Rosie Huntington-Whitely, Carmen Electra, Karrueche Tran, Alison Sudol and others.
+Armature has been featured in major fashion publications such as Luomo Vogue, Nylon and C magazine as well as art driven magazines like VVV, Rogue and Hashtag magazine. Featured in a nation wide Urban Decay campaign and more.
+Sara was trained by Kate and Laura mulleavy of Rodarte from 2007-2010."
+  )
+
+# ____DEZIGNERS_______________________________________
+
+mex = Designer.create!(
+  categories:[Category.find_by(title: "Womenswear")],
+  first_name:"Barbara",
+  last_name:"Sanchez-Kane",
+  brand: "Sanchez-Kane",
+  email:"music@designer.com",
+  password: "123456",
+  city:"Mexico City",
+  age:2008,
+  detail:"",
+  profile_photo_url: "http://cdn.vogue.mx/uploads/images/thumbs/mx/vog/2/s/2016/41/entrevista_a_barbara_disenadora_de_sanchez_kane_3592_490x.jpg")
+
+mex = Designer.create!(
+  categories:[Category.find_by(title: "Womenswear")],
+  first_name:"Rosie",
+  last_name:"Assoulin",
+  brand: "Rosie Assoulin",
+  email:"solomon@designer.com",
+  password: "123456",
+  city:"New York",
+  age:2008,
+  detail: "Eloquent & Timeless",
+  profile_photo_url: "http://www.badueh.com/wp-content/uploads/2017/04/Rosie.jpg")
+
+mex = Designer.create!(
+  categories:[Category.find_by(title: "Accessories")],
+  first_name:"Jida",
+  last_name:"Hull",
+  brand: "Freedom of Movement",
+  email:"fusion@designer.com",
+  password: "123456",
+  city:"Cape Town",
+  age: 2008,
+  detail: "",
+  profile_photo_url: "http://csa.global/sites/default/files/Freedom%20of%20movement%20FOM%20CSA%20The%20Wire%201.jpg")
+
+mex = Designer.create!(
+  categories:[Category.find_by(title: "Womenswear")],
+  first_name:"House of",
+  last_name:"Eden",
+  brand: "House of Eden",
+  email:"karate@designer.com",
+  password: "123456",
+  city:"Addis Ababa",
+  age:2008,
+  detail:"",
+  profile_photo_url: "https://static.wixstatic.com/media/ea4a9a_1385a1b0d4ec46f3977eaff25046971a~mv2_d_3881_5822_s_4_2.jpg/v1/crop/w_250,h_445,x_11,y_0,scl_0.08,q_90,usm_4.80_0.48_0.00/ea4a9a_1385a1b0d4ec46f3977eaff25046971a~mv2_d_3881_5822_s_4_2.jpg")
+
+mex = Designer.create!(
+  categories:[Category.find_by(title: "Womenswear")],
+  first_name:"H",
+  last_name:"H",
+  brand: "Ioanna Kourbela",
+  email:"soledad@designer.com",
+  password: "123456",
+  city:"Athens",
+  age:2008,
+  detail:"",
+  profile_photo_url: "https://i.pinimg.com/736x/db/e1/93/dbe193aebbc26e7b40eb6188133acc41--athens-fashion-designer.jpg")
+
+mex = Designer.create!(
+  categories:[Category.find_by(title: "Accessories")],
+  first_name:"Sarah",
+  last_name:"Beydoun",
+  brand: "Sarah's Bag",
+  email:"jihad@designer.com",
+  password: "123456",
+  city:"Beirut",
+  age:2008,
+  detail:"",
+  profile_photo_url: "https://shop.sarahsbag.com/corporate3/images/9309/carrousel-2-psychedelia.jpg?width=298")
+
+mex = Designer.create!(
+  categories:[Category.find_by(title: "Accessories")],
+  first_name:"Nathalie",
+  last_name:"Trad",
+  brand: "Nathalie Trad",
+  email:"hellogirl@designer.com",
+  password: "123456",
+  city:"Dubai",
+  age:2008,
+  detail:"BORN IN BEIRUT AND RAISED IN DUBAI, NATHALIE TRAD DEVELOPED A STRONG PENCHANT FOR ASYMMETRIC DESIGNS – WHICH TODAY FORMS THE BASIS OF HER EPONYMOUS LINE – WHILST EARNING A BA FROM PARIS’ ESMOD INTERNATIONAL. IT WAS THEN, IN 2007, THAT SHE DISCOVERED HER PERSONAL DESIGN ETHOS: TO TAKE CLASSIC SHAPES – UBIQUITOUS IN OUR NATURAL ENVIRONMENT – AND RADICALLY TRANSFORM THEM, DECONSTRUCTING AND REDEFINING THE BOUNDARIES OF FASHION AESTHETICS.
+
+IN 2008, TRAD RELOCATED TO NEW YORK TO FURTHER PURSUE THIS VISION. THERE, ...",
+  profile_photo_url: "http://www4.pictures.zimbio.com/gi/Nathalie+Trad+Presentation+Spring+2016+New+oAGps1Mce4Vl.jpg")
+
+mex = Designer.create!(
+  categories:[Category.find_by(title: "Womenswear")],
+  first_name:"Jida",
+  last_name:"Hull",
+  brand: "Illustrated People",
+  email:"helloboy@designer.com",
+  password: "123456",
+  city:"London",
+  age:2008,
+  detail:"",
+  profile_photo_url: "https://www.illustratedpeople.com/images/velour-sports-tracksuit-bottoms-p178-477_medium.jpg"
+  )
+
+mex = Designer.create!(
+  categories:[Category.find_by(title: "Womenswear")],
+  first_name:"Tufi",
+  last_name:"Duek",
+  brand: "Tufi Duek",
+  email:"himynames@designer.com",
+  password: "123456",
+  city:"Rio de Janeiro",
+  age:2008,
+  detail:"",
+  profile_photo_url: "https://www.fashiongonerogue.com/wp-content/uploads/2013/07/isabeli-tufi-duek-ad1.jpg"
+  )
+
+ex = Designer.create!(
+  categories:[Category.find_by(title: "Womenswear")],
+  first_name:"Henry",
+  last_name:"Lau",
+  brand: "Henry Lau",
+  email:"himyndames@designer.com",
+  password: "123456",
+  city:"Hong Kong",
+  age:2008,
+  detail:"",
+  profile_photo_url: "https://pbs.twimg.com/media/DPenw3SUQAAHUY7.jpg"
+  )
+
+ex = Designer.create!(
+  categories:[Category.find_by(title: "Womenswear")],
+  first_name:"Angel",
+  last_name:"Chen",
+  brand: "Angel Chen",
+  email:"himynsames@designer.com",
+  password: "123456",
+  city:"Shanghai",
+  age:2008,
+  detail:"Angel Chen was first introduced by Dongliang and sponsored by Sony in October 2014. Through SS15 catwalk entitled “The Rite of Spring”; orders from renowned LA retailer H.Lorenzo swiftly followed! The label’s AW15 collection won Fashion Scout’s “Ones to Watch” Award and was presented during London Fashion Week. In May 2015, Angel Chen created a capsule SS16 collection “Youthquake” for H.Lorenzo’s window display. Meanwhile, Angel Chen has received orders from prestigious stockists worldwide including Lane Crawford, IT and Urban Outfitters, and collaborated with Swarovski, Airbnb, Kiehl’s and Sony. Now London and Shanghai-based Angel Chen aims to continue using bright colours and mix materials to create an innocent, free-spirited and quirky character for creative people.",
+  profile_photo_url: "http://angelchenstudio.com/wp-content/uploads/2016/09/AngelChen004-1.jpg"
+  )
+
+ex = Designer.create!(
+  categories:[Category.find_by(title: "Womenswear")],
+  first_name:"Jida",
+  last_name:"Hull",
+  brand: "Play Clan",
+  email:"himynssames@designer.com",
+  password: "123456",
+  city:"Mumbai",
+  age:2008,
+  detail:"",
+  profile_photo_url: "http://static.wixstatic.com/media/4a6ad3_7e1f9e9270f543198f4ba063cf40920c.jpg"
+  )
