@@ -1119,3 +1119,33 @@ ex = Designer.create!(
   detail:"",
   profile_photo_url: "http://static.wixstatic.com/media/4a6ad3_7e1f9e9270f543198f4ba063cf40920c.jpg"
   )
+# ____UMIT____________________________________________
+
+
+umit = Designer.create!(
+  categories: [Category.find_by(title: "Menswear"), Category.find_by(title: "Footwear")],
+  brand: "Umit Benan",
+  first_name: "Umit",
+  last_name: "Benan",
+  email: "umithimself@benan.common",
+  password: "123456",
+  profile_picture: "https://www.umitbenan.com/themes/default-bootstrap/img/2.jpg",
+  city: "Milan",
+  age: 2009,
+  detail: "Umit Benan wanted to be a filmmaker, but diverted to fashion rather naturally,
+  keeping the urge to tell stories intact. He makes no real distinction between life, fantasy and
+  fiction because really there isn’t one. “I am interested in contrasts. That’s what life is all about, isn’t it?” he says.
+  His clothes – real, bold, imaginative – follow suit.
+Aesthetic imprinting leaves an indelible mark on fertile minds.
+Umit Benan was born to Turkish parents in Germany in 1980, and raised in Istanbul.
+As a kid in the 80s, he was bombarded with the assertive fashions and
+powerful masculine visions of the time, thanks to his clothing manufacturer father. As a teen in the 90s, he abs...")
+
+umit.profile_photo_url = "https://www.umitbenan.com/c/23-medium_default/art-by-night.jpg"
+
+fw_2018 = Collection.create!(
+  season: "Fall",
+  year: 2018,
+  detail: "i once loved a woman who loves menswear fw 2018",
+  designer: umit
+  )
