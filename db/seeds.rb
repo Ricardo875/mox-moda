@@ -1149,3 +1149,333 @@ fw_2018 = Collection.create!(
   detail: "i once loved a woman who loves menswear fw 2018",
   designer: umit
   )
+
+
+ss_2018 = Collection.create!(
+  season: "Spring",
+  year: 2018,
+  detail: "i once loved a woman who loves menswear fw 2018",
+  designer: umit
+  )
+
+sum_18_2 = Collection.create!(
+  season: "Summer 2",
+  year: 2018,
+  detail: "inspired by heat and sweat",
+  designer: umit
+  )
+
+sum_18_1 = Collection.create!(
+  season: "Summer 1",
+  year: 2018,
+  detail: "she loved freedom so I did too",
+  designer: umit
+  )
+
+  Product.create!(
+  name: "TABACCO COTTON MARFA SUIT",
+  detail: "Single Breasted Sartorial Jacket. Two Pleated Classic Pants.
+42% Md - 39% Li - 19% Co;",
+  color: "Tobacco",
+  sizes: "44,46,48",
+  picture_1: "https://www.umitbenan.com/975/tabacco-cotton-marfa-suit.jpg",
+  picture_2: "https://www.umitbenan.com/976/tabacco-cotton-marfa-suit.jpg",
+  picture_3: "https://www.umitbenan.com/1057/tabacco-cotton-marfa-suit.jpg",
+  picture_4: "https://www.umitbenan.com/1588/tabacco-cotton-marfa-suit.jpg",
+  collection: sum_18_1,
+  designer: umit,
+  price: 600
+  )
+Product.create!(
+  name: "SALMON LINEN HECTOR SUIT",
+  detail: "Single Breasted Sartorial Jacket. Two Pleated Classic Pants. 100% Linen;",
+  color: "Salmon",
+  sizes: "44,46,48",
+  picture_1: "https://www.umitbenan.com/978/salmon-linen-hector-suit.jpg",
+  picture_2: "https://www.umitbenan.com/979/salmon-linen-hector-suit.jpg",
+  picture_3: "https://www.umitbenan.com/1059/salmon-linen-hector-suit.jpg",
+  picture_4: "https://www.umitbenan.com/1593/salmon-linen-hector-suit.jpg",
+  collection: sum_18_1,
+  designer: umit,
+  price: 600
+  )
+
+
+  Product.create!(
+  name: "KIMONO",
+  detail: "Kimono with one patch pocket;
+grois-grain band side closure;
+multi stitched hems and UMIT BENAN logo label. 100% cotton piquet shirting;",
+  color: "White",
+  sizes: "48,50",
+  picture_1: "https://www.umitbenan.com/2103/kimono.jpg",
+  collection: fw_2018,
+  designer: umit,
+  price: 200
+  )
+
+
+
+  Product.create!(
+  name: "KIMONO",
+  detail: "Kimono with one patch pocket;
+grois-grain band side closure;
+multi stitched hems and UMIT BENAN logo label; 100% wool coating",
+  color: "Navy",
+  sizes: "48,50",
+  picture_1: "https://www.umitbenan.com/2160/kimono.jpg",
+  collection: fw_2018,
+  designer: umit,
+  price: 150
+  )
+
+
+   Product.create!(
+  name: "KIMONO",
+  detail: "Kimono with one patch pocket;
+grois-grain band side closure;
+multi stitched hems and umit benan logo label. 100% British mohair;",
+  color: "Navy stripes",
+  sizes: "48,50",
+  picture_1: "https://www.umitbenan.com/2206/kimono.jpg",
+  collection: fw_2018,
+  designer: umit,
+  price: 150
+  )
+
+  Product.create!(
+  name: "TRENCHCOAT",
+  detail: "Double breasted herringbone wool trench coat
+with frontal and back western carre;
+horn buckle belt;
+inner belt in contrast velvet;
+tuxedo cuff detail. 100% virgin wool",
+  color: "Dark green",
+  sizes: "48,50,52",
+  picture_1: "https://www.umitbenan.com/2110/trench-coat.jpg",
+  collection: fw_2018,
+  designer: umit,
+  price: 700
+  )
+
+  Product.create!(
+  name: "RAINCOAT",
+  detail: "Double breasted water proof cotton raincoat with velvet lapel;
+wide side welt pockets. 100% water proof cotton",
+  color: "Orange",
+  sizes: "48,50,52",
+  picture_1: "https://www.umitbenan.com/2139/raincoat.jpg",
+  collection: fw_2018,
+  designer: umit,
+  price: 150
+  )
+
+  Product.create!(
+  name: "WHITE LINEN HECTOR SUIT",
+  detail: "Single Breasted Sartorial Jacket. Two Pleated Classic Pants. 100% Linen;",
+  color: "White",
+  sizes: "44,46,48",
+  picture_1: "https://www.umitbenan.com/980/white-linen-hector-suit.jpg",
+  picture_2: "https://www.umitbenan.com/981/white-linen-hector-suit.jpg",
+  picture_3: "https://www.umitbenan.com/1058/white-linen-hector-suit.jpg",
+  picture_4: "https://www.umitbenan.com/1587/salmon-linen-hector-suit.jpg",
+  collection: sum_18_1,
+  designer: umit,
+  price: 600
+  )
+
+  Product.create!(
+  name: "MULTICOLOR JACQUARD MORNING PANTS",
+  detail: "55% Co - 42% Li - 2% Pl - 1% Pa",
+  color: "Multicolor",
+  sizes: "44,46,48,50,52",
+  picture_1: "https://www.umitbenan.com/1672/multicolor-jacquard-tejano-bomber.jpg",
+  picture_2: "https://www.umitbenan.com/1675/multicolor-jacquard-tejano-bomber.jpg",
+  picture_3: "https://www.umitbenan.com/1674/multicolor-jacquard-tejano-bomber.jpg",
+  picture_4: "https://www.umitbenan.com/1673/multicolor-jacquard-tejano-bomber.jpg",
+  collection: fw_2018,
+  designer: umit,
+  price: 91
+  )
+
+ Product.create!(
+  name: "KARATE KID TRENCH COAT",
+  detail: "100% Wool",
+  color: "Navy",
+  sizes: "44,46,48",
+  picture_1: "https://www.umitbenan.com/1841/kk-trench-coat.jpg",
+  picture_2: "https://www.umitbenan.com/1843/kk-trench-coat.jpg",
+  picture_3: "https://www.umitbenan.com/1844/kk-trench-coat.jpg",
+  picture_4: "https://www.umitbenan.com/1842/kk-trench-coat.jpg",
+  collection: fw_2018,
+  designer: umit,
+  price: 91
+  )
+
+  Product.create!(
+  name: "KARATE KID TRENCH COAT",
+  detail: "100% Wool",
+  color: "Brown",
+  sizes: "48,50",
+  picture_1: "https://www.umitbenan.com/1845/kk-trench-coat.jpg",
+  picture_2: "https://www.umitbenan.com/1650/kk-trench-coat.jpg",
+  picture_3: "https://www.umitbenan.com/1847/kk-trench-coat.jpg",
+  picture_4: "https://www.umitbenan.com/1849/kk-trench-coat.jpg",
+  collection: fw_2018,
+  designer: umit,
+  price: 91
+  )
+
+
+  Product.create!(
+  name: "HOODIE SHEARLING COAT",
+  detail: "100% Sheraling",
+  color: "Blue",
+  sizes: "44,46,48,50",
+  picture_1: "https://www.umitbenan.com/1900/hoodie-shearling-coat.jpg",
+  picture_2: "https://www.umitbenan.com/1899/hoodie-shearling-coat.jpg",
+  picture_3: "https://www.umitbenan.com/1901/hoodie-shearling-coat.jpg",
+  picture_4: "https://www.umitbenan.com/1903/hoodie-shearling-coat.jpg",
+  collection: fw_2018,
+  designer: umit,
+  price: 1800
+  )
+
+   Product.create!(
+  name: "HOODIE SHEARLING COAT",
+  detail: "100% Sheraling",
+  color: "Brown",
+  sizes: "44,46,48,50",
+  picture_1: "https://www.umitbenan.com/1904/hoodie-shearling-coat.jpg",
+  picture_2: "https://www.umitbenan.com/1905/hoodie-shearling-coat.jpg",
+  picture_3: "https://www.umitbenan.com/1907/hoodie-shearling-coat.jpg",
+  picture_4: "https://www.umitbenan.com/1908/hoodie-shearling-coat.jpg",
+  collection: fw_2018,
+  designer: umit,
+  price: 1800
+  )
+
+
+   Product.create!(
+  name: "HOODIE SHEARLING COAT",
+  detail: "100% Sheraling",
+  color: "Navy",
+  sizes: "44,46,48,50",
+  picture_1: "https://www.umitbenan.com/1895/hoodie-shearling-coat.jpg",
+  collection: fw_2018,
+  designer: umit,
+  price: 1800
+  )
+
+
+
+    Product.create!(
+  name: "BOMBER with LEATHER SLEEVES",
+  detail: "Wool with  Leather Sleeves",
+  color: "Red / Dark Brown",
+  sizes: "46,48,50",
+  picture_1: "https://www.umitbenan.com/1835/kk-bomber-with-leather-sleeves.jpg",
+  collection: fw_2018,
+  designer: umit,
+  price: 700
+  )
+
+  Product.create!(
+  name: "BOMBER with LEATHER SLEEVES",
+  detail: "Wool with  Leather Sleeves",
+  color: "Black / Navy",
+  sizes: "46,48,50",
+  picture_1: "https://www.umitbenan.com/1973/kk-bomber-with-leather-sleeves.jpg",
+  collection: fw_2018,
+  designer: umit,
+  price: 700
+  )
+
+  Product.create!(
+  name: "LEATHER HOODIE SCOTT JACKET",
+  detail: "100% Cow Leather Coppied with Diagonal Cotton Beige",
+  color: "Camel",
+  sizes: "44,46,48",
+  picture_1: "https://www.umitbenan.com/1931/scott-leather-jacket.jpg",
+  collection: fw_2018,
+  designer: umit,
+  price: 900
+  )
+
+
+  Product.create!(
+  name: "SHERPA JEANS JACKET",
+  detail: "Denim - 100% Cotton with Faux Fur Lining; ",
+  color: "Optical White",
+  sizes: "44,46,48",
+  picture_1: "https://www.umitbenan.com/1893/sherpa-jeans-jacket.jpg",
+  collection: fw_2018,
+  designer: umit,
+  price: 149
+  )
+
+
+  Product.create!(
+  name: "TEJANO EMBROIDERY JEANS JACKET",
+  detail: "100% Cotton; 100% Suede Yoke;",
+  color: "Blue Denim",
+  sizes: "46,48",
+  picture_1: "https://www.umitbenan.com/998/tejano-embroidery-jeans-jacket.jpg",
+  collection: fw_2018,
+  designer: umit,
+  price: 150
+  )
+
+  Product.create!(
+  name: "TEJANO EMBROIDERY JEANS JACKET",
+  detail: "100% Cotton; 100% Suede Yoke;",
+  color: "White Denim",
+  sizes: "46,48",
+  picture_1: "https://www.umitbenan.com/994/tejano-embroidery-jeans-jacket.jpg",
+  collection: fw_2018,
+  designer: umit,
+  price: 150
+  )
+
+
+  Product.create!(
+  name: "DENIM STRIPES DOUBLE BREASTED SANCHEETO JACKET",
+  detail: "Double Breasted Sartorial Jacket; 100% Delavè Linen ",
+  color: "Blue Denim",
+  sizes: "46,48,50",
+  picture_1: "https://www.umitbenan.com/987/denim-stripes-double-breasted-sancheeto-jacket.jpg",
+  collection: fw_2018,
+  designer: umit,
+  price: 200
+  )
+
+
+
+stranger = Retailer.create!(
+  first_name: "Stranger",
+  last_name: "owner is Owen",
+  detail: "Stranger is a concept store inspired by the need to share our curiosities and interests with a wider audience. We offer clothing, coffee, tea, accessories and a co-working space for makers living in or passing through Lagos.
+    We also have a brew bar, a shared working area, and a hangout space. Our main brands include Adeju Thompson, Palomino Blackwing, BLKKangaroo and many other local and global designers.",
+  email: "iamastrange@stranger.com",
+  password: "123456",
+  profile_picture: "https://scontent-ams3-1.cdninstagram.com/t51.2885-19/11909966_844899168921121_248401732_a.jpg",
+  city: "Lagos",
+  age: 2013
+)
+
+
+sc = StoreCollection.create!(
+  season: "Spring",
+  year: 2018,
+  details: "Womenswear plan for next quarter",
+  retailer: stranger,
+  )
+
+designerorder = DesignerOrder.create!(
+  total_quote: 10.203,
+  order_requested: true,
+  order_confirmed: false,
+  store_collection: sc,
+  )
+
+puts "Seeds done!"
