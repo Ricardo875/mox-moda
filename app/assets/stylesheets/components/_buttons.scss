@@ -16,7 +16,30 @@
   padding: 10px 15px;
   border-radius: 4px;
   font-weight: bold;
-  background: $space-orange;
+  background: $moxmoda-orange;
   transition: background 0.3s ease;
 }
+.btn-treehouse:hover {
+  opacity: 1;
+  background: $floral-white;
+  text-decoration: none;
+  color: white;
+}
 
+/* Build your own button classes ! */
+
+.btn-moxmoda-station {
+  font-weight: 900;
+  background-color: $moxmoda-orange;
+  color: white;
+  padding: 10px 20px;
+  margin: 0 20px;
+  box-shadow: 2px 0px 4px rgba(1,1,1,0.2);
+  border: none;
+  &:hover, &:active, &:focus {
+    color: white;
+    text-decoration: none;
+  }
+}
+
+}
