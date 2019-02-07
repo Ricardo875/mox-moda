@@ -42,4 +42,16 @@
   }
 }
 
+
+
+.container {
+  .row {
+    #designers-link {
+      &:hover {
+        color: $moxmoda-orange;
+        font-weight:bolder;
+      }
+
+    }
+  }
 }
