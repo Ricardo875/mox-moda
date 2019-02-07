@@ -38,6 +38,9 @@
   position: absolute;
   top: 0;
   bottom: 0;
+  right: 0;
+  width: 100%;
+  z-index: 2;
   background: black;
   opacity: 0;
 }
@@ -46,8 +49,8 @@
 }
 
 .card-image {
-  width: 250px;
-  height: 100px;
+  width: 200px;
+  height: 150px;
   background-size: cover;
   border-radius: 5%;
   margin-left: auto;
