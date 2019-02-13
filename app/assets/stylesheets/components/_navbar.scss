@@ -39,5 +39,11 @@
   flex: 0 0 40%;
   display: flex;
   justify-content: flex-end;
-
+}
+.mox-moda-navbar-link {
+  color: white;
+  transition: color 200ms ease;
+  text-decoration: none;
+  font-size: 15px;
+  }
 }
