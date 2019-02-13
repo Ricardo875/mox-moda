@@ -25,3 +25,12 @@
       }
     }
   }
+.logo {
+    flex: 1 0 auto;
+    display: flex;
+    justify-content: center;
+    img {
+      height: 47px;
+    }
+  }
+}
