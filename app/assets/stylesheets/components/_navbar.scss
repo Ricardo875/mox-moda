@@ -2,12 +2,12 @@
   z-index: 99999;
   display: flex;
   justify-content: space-between;
-  padding: 5px 55px;
+  padding: 10px 60px;
   align-items: center;
   position: absolute;
   left: 0;
   right: 0;
-  font-weight: 750;
+  font-weight: 900;
 .navbar-group-left {
     .avatar {
       width: 50px;
@@ -33,4 +33,11 @@
       height: 47px;
     }
   }
+}
+.navbar-group-right {
+  align-items: center;
+  flex: 0 0 40%;
+  display: flex;
+  justify-content: flex-end;
+
 }
