@@ -45,5 +45,8 @@
   transition: color 200ms ease;
   text-decoration: none;
   font-size: 15px;
+  &:hover, &:active, &:focus {
+    color: $moxmoda-orange;
+    text-decoration: none;
   }
 }
