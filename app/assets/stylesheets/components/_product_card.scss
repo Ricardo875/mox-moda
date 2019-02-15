@@ -1,4 +1,17 @@
 .products-grid {
   margin-left: 27px;
       width: 99%;
+  .row {
+    width: 100%;
+        margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+.padded-container {
+  padding-top: 100px;
+}
+
+.product-card-high {
+  min-height: 490px;
 }
