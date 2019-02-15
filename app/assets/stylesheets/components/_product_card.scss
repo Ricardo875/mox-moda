@@ -15,3 +15,9 @@
 .product-card-high {
   min-height: 490px;
 }
+
+.product-card {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
