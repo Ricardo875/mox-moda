@@ -27,4 +27,17 @@
   border-radius: 5px;
   background-color: white;
   margin: 0;
+  .fa-star {
+    opacity: 0.3;
+    position: absolute;
+    top: 10px;
+    right:25px;
+    font-size: 20px;
+    z-index: 9999999;
+    color: black;
+    &:hover {
+      opacity:1;
+      color: $space-orange;
+    }
+  }
 }
