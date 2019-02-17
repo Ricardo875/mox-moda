@@ -1,4 +1,32 @@
 .plan-header{
 
   border-bottom: 1px solid black;
+  padding-bottom:19px;
+}
+.wishlist {
+  text-align: center;
+  border: 1px solid #ccc;
+  width: 100%;
+  th {
+    text-align:center;
+  }
+
+  tbody {
+     td {
+    width: 200px;
+    border: 1px solid #ccc;
+    font-size:10px;
+  }
+
+    tr {
+      height: 150px;
+    }
+  tfoot { border: 0px;}
+  }
+}
+
+.prod-thumb {
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
 }
