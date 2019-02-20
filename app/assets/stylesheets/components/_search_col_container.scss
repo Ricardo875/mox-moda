@@ -2,6 +2,20 @@
   padding-top: 30px;
   background-color: white;
   width: 270px;
+  // margin: 52px -116px 53px 103px;
+  border-radius: 9px;
+ul {
+    list-style: none;
+    li {
+      margin: 10px 0;
+    }
+    li:before {
+      content: "+";
+      padding-right: 5px;
+    }
+
+
+  }
 }
 
 /* Add list h4 and underline option
