@@ -22,5 +22,9 @@ ul {
   }
 }
 
-/* Add list h4 and underline option
- */
+.with-underline {
+    border-bottom: 1px solid darkgrey;
+    text-transform: uppercase;
+    font-weight: 100;
+    padding-top: 43px;
+  }
