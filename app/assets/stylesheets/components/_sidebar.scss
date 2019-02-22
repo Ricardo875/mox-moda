@@ -13,3 +13,29 @@
    border-top: thin solid rgba(1,1,1,0.3);
 
  }
+
+#connect-btn {
+  margin-top:20px;
+}
+
+
+.first-section {
+  padding-bottom: 10px;
+  h2 {
+    text-align: left;
+  }
+
+}
+  .second-section{
+    ul {
+    list-style: none;
+    li {
+      margin: 10px 0;
+    }
+    li:before {
+      content: "+";
+      padding-right: 5px;
+    }
+  }
+}
+
