@@ -1,17 +1,14 @@
 .sidebar {
   padding:30px;
   border-radius:9px;
-  border: thin solid rgba(1,1,1,0.3);
-  box-shadow: 0px 1px 5px rgba(1, 1, 1, 0.3);
+  // border: thin solid rgba(1,1,1,0.3);
+  // box-shadow: 0px 1px 5px rgba(1, 1, 1, 0.3);
   width:234px;
-
-
 
   h4 { line-height: 27px;
    text-align:center;
    border-bottom: thin solid rgba(1,1,1,0.3);
    border-top: thin solid rgba(1,1,1,0.3);
-
  }
 
 #connect-btn {
@@ -37,12 +34,13 @@
       padding-right: 5px;
     }
   }
-
-
-  .search-col-container {
-    padding: 30px;
-    background-color: white;
-    width: 270px;
-    margin: 20px;
-    border-radius: 9px;
 }
+
+
+//   .search-col-container {
+//     padding: 30px;
+//     background-color: white;
+//     width: 270px;
+//     margin: 20px;
+//     border-radius: 9px;
+// }
