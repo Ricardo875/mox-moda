@@ -6,11 +6,13 @@
   font-weight: lighter;
   opacity: 0.6;
 }
+
 .btn-medium:hover {
   opacity: 1;
   text-decoration: none;
   color: #999999;
 }
+
 .btn-treehouse {
   color: white;
   padding: 10px 15px;
@@ -19,6 +21,7 @@
   background: $moxmoda-orange;
   transition: background 0.3s ease;
 }
+
 .btn-treehouse:hover {
   opacity: 1;
   background: $floral-white;
@@ -41,8 +44,6 @@
     text-decoration: none;
   }
 }
-
-
 
 .container {
   .row {
