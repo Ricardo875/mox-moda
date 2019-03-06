@@ -8,6 +8,7 @@
   left: 0;
   right: 0;
   font-weight: 900;
+
 .navbar-group-left {
     .avatar {
       width: 50px;
@@ -16,6 +17,7 @@
       border-radius: 50%;
       background-position: center;
     }
+
     flex: 0 0 40%;
     .flex-inline {
       display: flex;
@@ -25,6 +27,7 @@
       }
     }
   }
+
 .logo {
     flex: 1 0 auto;
     display: flex;
@@ -34,12 +37,14 @@
     }
   }
 }
+
 .navbar-group-right {
   align-items: center;
   flex: 0 0 40%;
   display: flex;
   justify-content: flex-end;
 }
+
 .mox-moda-navbar-link {
   color: white;
   transition: color 200ms ease;
@@ -50,6 +55,7 @@
     text-decoration: none;
   }
 }
+
 .navbar-collection {
   display: flex;
   align-items: center;
