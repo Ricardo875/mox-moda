@@ -3,7 +3,7 @@
     <div class="col-xs-12">
       <div class="designers-search-display">
         <div class="search-col-container">
-          <h4 class="text-center">Regions</h4>
+          <h4 class="text-center">All Regions</h4>
           <ul>
             <li>Africa</li>
             <li>Asia</li>
@@ -15,7 +15,7 @@
             <li>Oceania</li>
           </ul>
 
-          <h4 class='text-center'>Categories</h4>
+          <h4 class='text-center'>All Categories</h4>
           <ul>
             <% Category.all.each do |category| %>
             <li> <%= link_to category.title, category_path(category)  %> </li>
